@@ -1,0 +1,14 @@
+#funcion llamada input()
+#permite introducir datos al usuario
+
+num1 = input("Ingrese numero 1 = ")
+num2 = input("Ingresar numero 2 = ")
+
+
+suma = int(num1) + int(num2)
+resta = int(num1) - int(num2)
+multiplicacion = int(num1) * int(num2)
+division = int(num1) / int(num2)
+
+print(multiplicacion)
+print(division)

@@ -1,0 +1,8 @@
+#concatenacion de string "+"-","
+primera_palabra = "Hola"
+frase_completa = primera_palabra + "Daniel"
+print(frase_completa)
+
+segunda_palabra = ' Mundo'
+frase_completa = primera_palabra + segunda_palabra
+print(frase_completa)

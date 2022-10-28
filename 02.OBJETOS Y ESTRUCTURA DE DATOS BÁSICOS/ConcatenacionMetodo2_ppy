@@ -1,0 +1,15 @@
+#metodo alternativo 2
+#str.format() forma formatear nuestros strings
+
+#orden por defecto
+frase = "Meses: {}, {} y {}".format('Enero','Febrero','Marzo')
+print(frase)
+
+#especificar un orden
+frase = "Meses: {1}, {0} y {3}".format('Enero','Febrero','Marzo', 'Abril')
+print(frase)
+
+
+#Especificar el orden mediante parejas clave-valor
+frase = "Meses: {ene}, {feb} y {mar}".format(ene = 'Enero',feb ='Febrero',mar ='Marzo')
+print(frase)
