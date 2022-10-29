@@ -1,0 +1,5 @@
+# Concatenación metodo 'f' strings 
+nombre = "Jose"
+edad = 29
+saludo = f"Me llamo {nombre} y tengo {edad} year."
+print(saludo)

@@ -1,0 +1,8 @@
+#Metodo 1 alternativo str join() 
+#recibe como argumento una listado de los strings 
+strings = ['do', 're' , 'mi'] #lista 
+separador = '-' 
+print(separador.join(strings)) 
+strings = ['do', 're' , 'mi'] #lista 
+separador = '' 
+print(separador.join(strings))
