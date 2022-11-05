@@ -26,7 +26,8 @@ Lista.insert(0,14)
 print(Lista)
 
 suma = (14 + 64 + 12 + 23 + 5 + 29 + 92)
-print(suma)
+print(sum(Lista))
+
 
 Lista3 = Lista
 Lista.append(239)
