@@ -1,5 +1,6 @@
 """ Listas
-=> permiten guardar mas de un elemento dentro de una variable y ademas puede hacerlo con diferentes tipos de datos 
+=> permiten guardar mas de un elemento dentro de una variable y
+ademas puede hacerlo con diferentes tipos de datos 
 """
 
 #Lista vacia 
