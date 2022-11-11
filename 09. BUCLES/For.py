@@ -29,3 +29,9 @@ else:
 t = n * p 
 print('Valor a pagar: ', t)
 
+
+for item in secuencia 
+    intrucciones de bloque 
+    intrucciones de bloque 
+    intrucciones de bloque 
+    intrucciones de bloque
