@@ -50,7 +50,25 @@ for p in lista:
 
 print(lista_sum)
 
+#Lista con tuplas
+lista = [(2,4),(6,8),(10,12)]
+
+for tup in lista:
+    print(tup)
+
+for (t1,t2) in lista:
+    print(t2)
 
 
+#diccionarios
+
+d = {'k1':1, 'k2':2, 'k3':3}
+
+print(list(d.keys()))
+print(list(d.values()))
+
+for k,v in d.items():
+    print(k)
+    print(v)
 
 
