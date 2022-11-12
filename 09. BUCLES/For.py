@@ -71,4 +71,6 @@ for k,v in d.items():
     print(k)
     print(v)
 
-
+#Iterar
+for letras in "Este es un string":
+    print(letras)

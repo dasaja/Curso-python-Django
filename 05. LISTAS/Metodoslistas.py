@@ -45,3 +45,21 @@ print(numeros)
 #extend => fusionar dos listas
 alumnos.extend(numeros)
 print(alumnos)
+
+
+#acceder a varios elemtos de la lista
+lista = ['a','b','c','d','e','f']
+print(lista[1:4])
+
+#desde primera posicion hasta la cuarta
+print(lista[:3])
+
+#desde la tercera posicion hsata el final
+print(lista[2:])
+
+
+#recorer un a lista
+for ele in ['python','js','java']:
+  print("Programando en ", ele)
+
+  
