@@ -25,3 +25,14 @@ else:
     p=40*t + 1.5*t*(c - 40) - d 
 
 print('Valor a pagar', p)
+
+
+
+persona = 'Daniel Salcedo'
+
+if persona == 'jose':
+    print(f'Bienvenido {persona}')
+elif persona == 'Daniel':
+    print(f'Bienvenido {persona}')
+else:
+    print("Bienvenida , Cual es tu nombre?")

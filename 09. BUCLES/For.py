@@ -12,7 +12,7 @@ for num in lista:
     if num % 2 == 0:
         print(num)
     else:
-        print("Impar" int(num))
+        print("Impar" , num)
         
 
 """
@@ -30,8 +30,27 @@ t = n * p
 print('Valor a pagar: ', t)
 
 
-for item in secuencia 
+
+
+
+"""for item in secuencia
     intrucciones de bloque 
     intrucciones de bloque 
     intrucciones de bloque 
     intrucciones de bloque
+"""
+
+
+lista = [1,2,3,4,5,6,7,8,9,10]
+
+lista_sum =0
+
+for p in lista:
+    lista_sum += p 
+
+print(lista_sum)
+
+
+
+
+
