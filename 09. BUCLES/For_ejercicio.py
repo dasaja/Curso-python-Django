@@ -9,4 +9,7 @@ for n in [1,2,3,4,5]:
 for p in ["Guayas", "Los Rios", "Manabí", "Sta. Elena", "Esmeraldas"]:
 
     print("Provincia", p)
-    
+
+"""for p in ['Guayas', 'Los Rios', 'Manabi','Sta. Elena','Esmeraldas']:
+    print('Provincia: ', p)""
+
