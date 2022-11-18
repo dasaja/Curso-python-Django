@@ -12,7 +12,7 @@ alumnos = ["Maria","Veronica", "Anai", "Daniel"]
 #acceder alos elementos
 print(alumnos[0]) #muestra 0 elemento
 print(alumnos[1]) #muestra 1 elemento
-print(alumnos[2]) #muestra 1 elemento
+print(alumnos[2]) #muestra 2 elemento
 print(alumnos[-1]) #muestra 3 elemento
 
 #cambiar un elemento 
