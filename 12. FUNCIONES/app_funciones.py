@@ -145,4 +145,13 @@ print(r1)
 
 r2 = x(2)
 print(r2)
-    
+
+
+#parametros por omision
+def fun(a,b=0):
+  print(a,b)
+
+print(fun(3,5))
+print(fun(3))
+
+
