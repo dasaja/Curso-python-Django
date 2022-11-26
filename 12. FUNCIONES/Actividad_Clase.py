@@ -20,7 +20,7 @@ def menor_de_dos_pares(a,b):
     return max(a,b)
 
 print(menor_de_dos_pares(2,4))
-print(menor_de_dos_pares(2,5))
+print(menor_de_dos_pares(1,6))
 
 
 
