@@ -88,3 +88,13 @@ def empleado_check(horas_trabajas):
   return(empleado_del_mes, max_horas)
 
 print(empleado_check(horas_trabajas))
+
+
+#Ejercicio Interacciones entre funciones
+"""Menor de dos pares: escriba una función que devuelva el menor
+de dos números dados si ambos números son pares, pero devuelva el 
+mayor si uno o ambos números son impares.
+
+menor_de_dos_pares(2,4) --> 2
+mayor_de_dos_pares(2,5) --> 5"""
+

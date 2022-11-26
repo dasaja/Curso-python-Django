@@ -154,4 +154,3 @@ def fun(a,b=0):
 print(fun(3,5))
 print(fun(3))
 
-
