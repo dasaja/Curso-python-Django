@@ -22,3 +22,13 @@ Resultado = (((3+2)/(2*5))**2)
 print(Resultado)
 
 #Ejercicio 5
+"""Escribir un programa que pregunte al usuario 
+por el número de horas trabajadas y el coste por hora. 
+Después debe 
+mostrar por pantalla la paga que le corresponde."""
+
+Num_horas = int(input("Cuál es el número de horas trabajadas?: "))
+Coste_horas = float(input("Cuál es el costo por hora?: "))
+paga = Num_horas * Coste_horas
+
+print("Tu pago es", paga)
