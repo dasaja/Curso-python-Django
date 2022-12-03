@@ -45,12 +45,32 @@ print(numero_entero(150))"""
 caracter en el original generemos tres caracteres más.
 cadena_triple("Hola") ==> "HHHooolllaaa"
 """
-def cadena_triple(text):
+"""def cadena_triple(text):
   result = ''
   for char in text:
     result += char * 3
   return result 
 
 print(cadena_triple('Hola'))
-print(cadena_triple('Jose'))
+print(cadena_triple('Jose'))"""
 
+"""
+Escribir una función que tome una
+sola letra, y retorne una representación de letra
+de 5x5
+out:   *
+      * *
+     *****
+     *   * 
+     *   *    
+"""  
+
+
+def imprimir_grande(letra):
+  patron = {1:'  *  ',2:' * * ',3:'*   *',4:'*****',5:'**** ',6:'   * ',7:' *   ',8:'*   * ',9:'*    '}
+  alfabeto = {'A':[1,2,4,3,3],'B':[5,3,5,3,5],'C':[4,9,9,9,4],'D':[5,3,3,3,5],'E':[4,9,4,9,4]}
+  for p in alfabeto[letra.upper()]:
+    print(patron[p])
+
+
+imprimir_grande('e')
