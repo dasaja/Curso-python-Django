@@ -1,0 +1,53 @@
+class Cordenada:
+  def __init__(self, x, y):
+    self.__X = x
+    self.__Y = y
+
+  def GetX(self):
+    return self.__X
+
+  def GetY(self):
+    return self.__Y 
+
+  def SetX(self, x):
+    self.__X = x 
+
+  def SetY(self, y):
+    self.__Y = y 
+
+  def MostrarCordenada(self):
+    print("(",self.X,",",self.Y,")")
+
+class Cuadrado():
+  def __init__(self, v1, v2, v3, v4):
+    self.__V1 = v1
+    self.__V2 = v2
+    self.__V3 = v3
+    self.__V4 = v4
+
+  def __MostrarCordenadaV1(self):
+    print("(",self.__V1.GetX(),",",self.__V1.GetY(),")")
+
+  def __MostrarCordenadaV2(self):
+    print("(",self.__V2.GetX(),",",self.__V2.GetY(),")")
+
+  def __MostrarCordenadaV3(self):
+    print("(",self.__V3.GetX(),",",self.__V3.GetY(),")")
+
+  def __MostrarCordenadaV4(self):
+    print("(",self.__V4.GetX(),",",self.__V4.GetY(),")")   
+
+  def MostrarVertices(self):
+    print("El cuadrado esta compuesto por los siguientes vertices:")
+    self.__MostrarCordenadaV1()
+    self.__MostrarCordenadaV2()
+    self.__MostrarCordenadaV3()
+    self.__MostrarCordenadaV4()  
+
+v1 = Cordenada(1,1)
+v2 = Cordenada(4,1)
+v3 = Cordenada(4,4)
+v4 = Cordenada(1,4)
+
+cuadrado = Cuadrado(v1,v2,v3,v4)
+cuadrado.MostrarVertices()
