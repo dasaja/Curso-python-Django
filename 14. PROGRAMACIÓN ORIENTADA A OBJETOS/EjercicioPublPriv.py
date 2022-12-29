@@ -18,7 +18,7 @@ class PersonaPrivada:
     def GetApellidos(self):
         return self.__Apellidos
     def SetApellidos(self, apellidos):
-        self.Apellidos = apellidos
+        self.__Apellidos = apellidos
 
     def GetEdad(self):
         return self.__Edad
