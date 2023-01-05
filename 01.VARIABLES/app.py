@@ -17,8 +17,12 @@ suma = numero_1 + numero_2
 resta = numero_1 - numero_2
 multiplicacion = numero_1 * numero_2
 division = numero_1 / numero_2
+modulo = numero_1 % numero_2
+
 
 print("Suma =", suma)
 print("Resta =", resta)
 print("Multiplicacion =", multiplicacion)
 print("Division =", division)
+print("Modulo =", modulo)
+
