@@ -1,15 +1,6 @@
-from Menú import Menu
-
-menu = Menu()
-menu.get_items()
-menu.find_drink("late")
-
-""" 
-main
 from menu import Menu
+from coffe_maker import CoffeMaker
 
-menu = Menu()
-menu.get_items()
-menu.find_drink("cafe")
+coffe_makers = CoffeMaker()
+coffe_makers.report()
 
-"""
