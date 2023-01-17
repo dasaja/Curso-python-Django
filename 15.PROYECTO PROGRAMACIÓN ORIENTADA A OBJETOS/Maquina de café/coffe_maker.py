@@ -1,19 +1,6 @@
 class CoffeMaker:
     """Modelo de la máquina que hace el café"""
 
-    def __int__(self):
-        self.resources = {
-            "water": 300,
-            "milk": 200,
-            "coffe": 100,
-        }
-
-    def report(self):
-        """Imprime un informe de todos los recursos de la máquina de café"""
-        print(f"Agua: {self.resources['water']}ml")
-        print(f"Leche: {self.resources['milk']}ml")
-        print(f"Cafe: {self.resources['coffe']}g")
-
     def __init__(self):
         self.resources = {
             "water": 300,
@@ -26,7 +13,6 @@ class CoffeMaker:
         print(f"Agua: {self.resources['water']}ml")
         print(f"Leche: {self.resources['milk']}ml")
         print(f"Cafe: {self.resources['coffe']}g")
-
 
 
 
