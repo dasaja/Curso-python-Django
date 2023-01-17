@@ -121,13 +121,13 @@ print(multipicar([1,2,3,-4,2]))"""
 #es palindromo
 #palindromo ("asadd") True o False 
 
-def palindromo (palabra):
+"""def palindromo (palabra):
     if palindromo == palabra [::-1]:
         print (True)
     else:
         return (False)    
 
-print(palindromo("Ana"))        
+print(palindromo("Ana")) """       
 
 #Profesor
 def palindromo(s):

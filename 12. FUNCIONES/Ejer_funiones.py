@@ -64,7 +64,7 @@ old_macdonald("macdonald")
 def old_macdonald(name):
   if len(name) > 3:
     return name[:3].capitalize() + name[3:].capitalize()
-    print(name)
+
   else:
     return '¡El nombre es muy corto!'
 
