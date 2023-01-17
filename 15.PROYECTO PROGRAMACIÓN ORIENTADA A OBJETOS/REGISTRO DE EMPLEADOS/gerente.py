@@ -1,4 +1,5 @@
 from empleado import Employee
+from valido_input import validar
 
 
 class EmployeesManager:
@@ -6,12 +7,12 @@ class EmployeesManager:
         self.employees = []
 
     def add_employee(self):
-        print('\nIngrese los datos del empleado: ')
+        print('\nIngrese los datos del empleado:')
         name = input("Ingrese el nombre: ")
         age = input("Ingrese la edad: ")
         salary = input("Ingrese el salario: ")
-        self.employees.append(Employee(name, age, salary))
 
+        self.employees.append(Employee(name, age, salary))
 
     def list_employee(self):
         if len(self.employees) == 0:
@@ -27,13 +28,13 @@ class EmployeesManager:
             emp = self.employees[idx]
             if age_from <= emp.age <= age_to:
                 print("\tEliminado", emp.name)
-
+                self.employees.pop(idx)
 
     def find_employee_by_name(self, name):
-         for emp in self.employees:
-             if emp.name == name:
-                 return emp
-         return None
+        for emp in self.employees:
+            if emp.name == name:
+                return emp
+        return None
 
     def update_salary_by_name(self, name, salary):
         emp = self.find_employee_by_name(name)
@@ -41,9 +42,4 @@ class EmployeesManager:
         if emp is None:
             print("Error: Ningun empleado con ese nombre")
         else:
-            emp.salary == salary
-
-
-
-
-
+            emp.salary = salary
