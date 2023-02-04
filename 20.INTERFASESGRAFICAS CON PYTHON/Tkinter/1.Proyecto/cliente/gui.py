@@ -124,7 +124,7 @@ class Frame(tk.Frame):
         #Scroball
         self.scroll = ttk.Scrollbar(self, orient="vertical", command=self.tabla.yview)
         self.scroll.grid(row=4, column=4, sticky="nse")
-        self.tabla.configure(yscrollcommand=self.scroll.set)git
+        self.tabla.configure(yscrollcommand=self.scroll.set)
 
         #Crear títulos | Cabeceras o Heading
         self.tabla.heading("#0", text="ID")
