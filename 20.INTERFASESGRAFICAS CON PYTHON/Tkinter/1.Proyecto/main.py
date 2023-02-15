@@ -8,6 +8,7 @@ def main():
     root.iconbitmap("img/video.ico")
     root.resizable(0,0)  #da elasticidad tanto vertical como horizontal X, Y
 
+
     barra_menu(root)
 
 

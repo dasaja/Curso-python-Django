@@ -1,6 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
 
+#Importar modelo
+from Model.pelicula_dao import crear_tabla, borrar_tabla, Pelicula
+from Model.pelicula_dao import guardar
 
 def barra_menu(root):
     barra_menu = tk.Menu(root)
@@ -19,8 +22,8 @@ def barra_menu(root):
     barra_menu.add_cascade(label="Ayuda", menu=menu_ayuda)
 
     "Sub Menús"
-    menu_inicio.add_command(label="Crear registro en DB")
-    menu_inicio.add_command(label="Eliminar registro en la DB")
+    menu_inicio.add_command(label="Crear registro en DB", command= crear_tabla)
+    menu_inicio.add_command(label="Eliminar registro en la DB", command=borrar_tabla)
     menu_inicio.add_command(label="Salir", command=root.destroy)
 
 
@@ -30,6 +33,7 @@ class Frame(tk.Frame):
         self.root = root
         self.pack()
         self.config(bg="green")
+        self.id_pelicula = None
 
         self.campos_pelicula()
         self.deshabilitar_campo()
@@ -75,7 +79,7 @@ class Frame(tk.Frame):
         self.boton_nuevo.grid(row=3, column=0, padx=10, pady=10)
 
         #Boton Guardar
-        self.boton_guardar = tk.Button(self, text="Guardar")
+        self.boton_guardar = tk.Button(self, text="Guardar", command= self.guardar_datos)
         self.boton_guardar.config(width=20, font=('Arial', 12, 'bold'),
                                 fg='#DAD5D6', bg='#1658A2',
                                 cursor='hand2', activebackground='#3586DF')
@@ -103,6 +107,17 @@ class Frame(tk.Frame):
 
         self.boton_guardar.config(state="disable")
         self.boton_cancelar.config(state="disable")
+    def guardar_datos(self):
+        self.pelicula = Pelicula(self.mi_nombre.get(),
+        self.mi_duracion.get(),
+        self.mi_genero.get())
+
+        if self.id_pelicula == None:
+            guardar(self.pelicula)
+        else:
+            pass
+
+        self.tabla_peliculas()
 
     def habilitar_campo(self):
         self.mi_nombre.set("")
