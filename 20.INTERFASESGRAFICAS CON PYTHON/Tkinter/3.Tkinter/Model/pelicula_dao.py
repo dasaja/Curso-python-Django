@@ -81,5 +81,33 @@ def Listar():
 
     return lista_peliculas
 
+def editar(pelicula, id_pelicula):
+    conexion = ConexionDB()
+
+    sql = f"""UPDATE peliculas
+    SET nombre = '{pelicula.nombre}', duracion = '{pelicula.duracion}',
+    genero = '{pelicula.genero}'
+    WHERE id_pelicula = {id_pelicula} """
+    try:
+        conexion.cursor.execute(sql)
+        conexion.cerrar()
+    except:
+        titulo = "Edición de datos"
+        mensaje = "No se ha podido editar ese registro"
+        messagebox.showerror(titulo, mensaje)
+
+def eliminar(id_pelicula):
+    conexion = ConexionDB()
+
+    sql = f'DELETE FROM peliculas WHERE id_pelicula = {id_pelicula}'
+
+    try:
+        conexion.cursor.execute(sql)
+        conexion.cerrar()
+    except:
+        titulo = 'Eliminar datos'
+        mensaje = 'No se puede eliminar datos'
+        messagebox.showerror(titulo, mensaje)
+
 
 
